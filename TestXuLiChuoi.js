@@ -1,17 +1,15 @@
-let firstName = "   tien   "
+let name1 = "tien"
 
-let nameHai = "My name Is :"
-let nameLength = nameHai.length
-// console.log(nameLength)
-let caHai = nameHai + firstName
-// console.log(caHai)
+let name2 = " My name is :"
 
-let string2 = nameHai.concat(firstName)
+// let khongdungcat = name2.concat(name1)
+// console.log(khongdungcat)
+let khudaucach = name1.trim()
 
-// console.log(string2)
+let ganchuoi = name2.concat(khudaucach)
+// console.log(ganchuoi)
+// let catsplit = khudaucach.split("i")
 
-// let khoangTrang = nameHai + firstName
-// console.log(khoangTrang)
-let khoangTrang1 = firstName.trim()
-let khoangTrang = nameHai + khoangTrang1
-console.log(khoangTrang)
+// console.log(catsplit) 
+let demindexOf = name1.indexOf("i")
+console.log(demindexOf)
