@@ -1,15 +1,11 @@
-let name1 = "tien"
+let name1 = "    Tien"
 
-let name2 = " My name is :"
+let name2 = "My Name Is :"
+let xulidauspace = name1.trim()
+let congchuoi2 = name2.concat(xulidauspace)
 
-// let khongdungcat = name2.concat(name1)
-// console.log(khongdungcat)
-let khudaucach = name1.trim()
+let catchuoi = xulidauspace.split("")
 
-let ganchuoi = name2.concat(khudaucach)
-// console.log(ganchuoi)
-// let catsplit = khudaucach.split("i")
 
-// console.log(catsplit) 
-let demindexOf = name1.indexOf("i")
-console.log(demindexOf)
+let indexOF = xulidauspace.indexOf("v")
+console.log(indexOF)
