@@ -1,28 +1,32 @@
-// let name1 = '    Tien'
+// let name1 = '   tien';
 
-// let name2 = " My name is:"
+// let name2 = ' My name isiii:'
+
+// let khudau = name1.trim()
+// let congchuoi = name2.concat(khudau)
+
+// let catkhudau = khudau.split("")
+
+// let inbdexof = name2.indexOf("i")
+
+// console.log(inbdexof)
 
 
-// let culi = name1.trim()
-// let noichuoi = name2.concat(culi)
 
+let myAray = [1, ' tien' ,2, 'bui']
 
-// let cat = culi.split("")
+myAray.push(3,'anh','tien')
 
-// let xcat= cat.indexOf("i")
-// console.log(xcat)
+myAray.pop()
 
+myAray[1] = 'bui' 
 
-let myArray = [ 1, "anh" , 2 , "Tien"]
+myAray[3] = 'anh'
 
-myArray.push(3,"bui")
+myAray[5] = 'tien'
 
-myArray.pop()
+myAray.splice(0,5)
 
-myArray.splice(2,3)
+let timkiem = myAray.indexOf('tien')
 
-myArray[1] = 'bui'
-
-let indexx = myArray.indexOf(1)
-
-console.log(indexx)
+console.log(timkiem)
