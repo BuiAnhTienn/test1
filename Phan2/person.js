@@ -14,3 +14,5 @@ class Person{
 }
 let info = new Person('Ti',18,'Danong')
 info.getInfo()
+
+module.exports = Person
