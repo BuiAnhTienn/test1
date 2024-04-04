@@ -1,21 +1,4 @@
 
-
-class Person {
-    constructor(name , age ){
-        this.name = name
-        this.age = age
-    }
-
-    getInfo(){
-        console.log('My name',this.name)
-        console.log('My age',this.age)
-    }
-}
-
-let ti = new Person('tien',18);
-ti.getInfo()
-
-
 // Định nghĩa một lớp (class) JavaScript có tên là Animal
 class Animal {
     // Định nghĩa một thuộc tính không công khai (_eyeAnimal) cho đối tượng Animal
@@ -36,21 +19,35 @@ class Animal {
 let vit = new Animal();
 
 // Gán giá trị 'Yellow' cho thuộc tính eyeAnimal của đối tượng vit
-vit.eyeAnimal = 'Yellow';
+vit.eyeAnimal = 'Yellowe';
 
 // Truy xuất và in ra giá trị của thuộc tính eyeAnimal của đối tượng vit
 console.log(vit.eyeAnimal); // Kết quả: Yellow
 
 
 
-class ania{
-    set ani(value){
-        this._ani = value
+class Animal1 {
+    set eyeaniaml (value){
+        this._eyeAnimal = value
     }
-    get ani(){
-        return this._ani;
+    get eyeAnimal1 (){
+        return this._eyeAnimal1;
     }
 }
-let may = new ania();
-may.ani = 'Yeal'
-console.log(may.ani)
+
+let vit1 = new Animal1();
+vit1.eyeAnimal = 'Yellow'
+console.log(vit1.eyeAnimal)
+
+class Animal2 {
+    _eyeAnima2;
+    get eyeAnima2() {
+        return this._eyeAnima2;
+    }
+    set eyeAnima2(value) {
+        this._eyeAnima2 = value;
+    }
+}
+let sam = new Animal2();
+sam.eyeAnima2 = 'Black'
+console.log(sam.eyeAnima2)
