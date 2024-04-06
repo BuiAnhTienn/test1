@@ -1,11 +1,13 @@
-const NhanVien = require('./nhanvien');
-class nhanvienthoivu extends NhanVien{
-        constructor(name,id){
-            super(name,id)
-        }
+const Employee = require("./nhanvien");
 
-        luongphucap(){
-            return 0;
-        }
+class nvtv extends Employee{
+    constructor(name , id){
+        super(name , id)
+    }
+
+    getSalary(){
+        return 0 ;
+    }
 }
-module.exports = nhanvienthoivu;
+
+module.exports = nvtv;

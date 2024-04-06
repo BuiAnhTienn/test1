@@ -1,13 +1,13 @@
-const NhanVien = require('./nhanvien');
-class nhanvienchinhthuc extends NhanVien{
-        constructor(name,id){
-            super(name,id)
-        }
+const Employee = require("./nhanvien");
 
+class nvct extends Employee{
+    constructor(name , id){
+        super(name , id)
+    }
 
-        hđlđ(){
-            console.log(this.name +'Cần đi đến phòng nhân sự nhé')
-        }
-
+    moi(){
+        console.log(this.name + " Đến phòng Hr")
+    }
 }
-module.exports = nhanvienchinhthuc;
+
+module.exports = nvct;

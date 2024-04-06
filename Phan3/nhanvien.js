@@ -1,18 +1,16 @@
-class NhanVien {
-    constructor(name , id){
+class Employee {
+    constructor(name , id , salary){
         this.name = name
         this.id = id
     }
 
-    luongphucap(){
-        return 500;
+    getSalary(){
+        return 5000;
     }
 
-    laythongtinnhanvien(){
-        console.log('Ten nv:',this.name)
-        console.log('Ma NV',this.id)
+    getInfoEmployee(){
+        console.log('My name:',this.name)
+        console.log('My id :',this.id)
     }
 }
-
-let teo = new NhanVien();
-module.exports = NhanVien;
+module.exports = Employee;

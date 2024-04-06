@@ -1,17 +1,16 @@
+const nvct = require("./nhanvienchinhthuc");
+const nvtv = require("./nhanvienthoivu");
 
-const nhanvienchinhthuc = require("./nhanvienchinhthuc");
-const nhanvienthoivu = require("./nhanvienthoivu");
+let Person1 = new nvct('teo', 113)
+let Person2 = new nvtv('ti', 114)
 
-let teo = new nhanvienchinhthuc('Teo',111);
-let ti = new nhanvienthoivu('ti',112);
+Person1.getInfoEmployee()
+let salary1 = Person1.getSalary()
+console.log(salary1)
+Person1.moi()
 
-teo.laythongtinnhanvien();
-ti.laythongtinnhanvien();
 
-let teoSalary =  teo.luongphucap();
-let tiSalary = ti.luongphucap();
 
-console.log('Lương của tèo:',teoSalary)
-console.log('Lương của tí:',tiSalary)
-
-teo.hđlđ();
+Person2.getInfoEmployee()
+let salary2 = Person2.getSalary();
+console.log(salary2)
