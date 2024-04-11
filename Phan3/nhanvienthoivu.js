@@ -1,8 +1,8 @@
 const Employee = require("./nhanvien");
 
-class nvtv extends Employee{
+class nvtv extends Employee {
     constructor(name , id){
-        super(name , id)
+        super(name,id)
     }
 
     getSalary(){
