@@ -1,14 +1,14 @@
 // let myArray = [1,2,3,4,5,6,7,8,9,10]
-
 // let mangchan = []
 // let mangle = []
 
 // for (let i = 0; i < myArray.length; i++) {
 //     const element = myArray[i];
-//     if (element % 2 == 0) {
+//     if (element % 2 ==0) {
 //         mangchan.push(element)
 //     } else {
 //         mangle.push(element)
+        
 //     }
 // }
 
@@ -16,30 +16,41 @@
 // console.log(mangle)
 
 
-// class Person {
-//     constructor(name , age){
-//         this.name = name
-//         this.age = age
+// class Person{
+//     _eyeAnimal;
+//     get eyeAnimal() {
+//         return this._eyeAnimal;
 //     }
-
-//     getInfo(){
-//         console.log('My name:',this.name)
-//         console.log('My age:',this.age)
+//     set eyeAnimal(value) {
+//         this._eyeAnimal = value;
 //     }
 // }
 
-// let teo = new Person('tien',18)
-// teo.getInfo()
+// let teo = new Person()
+// teo.eyeAnimal = 'Yellow'
+// console.log(teo.eyeAnimal)
 
-class Person{
-    _animal;
-    get animal() {
-        return this._animal;
-    }
-    set animal(value) {
-        this._animal = value;
-    }
-}
-let name1 = new Person();
-name1.animal = 'Yellow'
-console.log(name1.animal)
+// let name1 = '    tien'
+// let name2 = 'Bui'
+// let catdau = name1.trim()
+// let congchuoi = name2.concat(catdau)
+
+// let catchuoi = catdau.split('')
+
+// let indexx = catdau.indexOf('a')
+// console.log(indexx)
+
+let myArray =[1,'tien',2,'bui',3,'anh']
+
+myArray.push('tinh')
+
+myArray.pop()
+
+myArray[1] = 'bui'
+myArray[3] = 'anh'
+myArray[5] = 'tien'
+
+myArray.splice(0,5)
+
+let tim = myArray.indexOf('i')
+console.log(myArray)
